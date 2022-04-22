@@ -1,7 +1,13 @@
-let age = prompt('Сколько тебе лет?', 100);
+'use strict';
+let login = prompt('Введите свой логин: ', 'Логин');
 
-alert(`Тебе ${age} лет!`);
+let message = login == 'Сотрудник' ? 'Привет':
+              login == 'Директор' ?  'Здравствуйте':
+              login == '' ? 'Нет логина':
+              '';
 
-let isBoss = confirm('Кто здесь главный?');
+alert(message);
 
-alert(isBoss);
+if ( 14 <= age <= 90){
+  
+}
